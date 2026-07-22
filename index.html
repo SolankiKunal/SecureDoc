@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secure Cloud Document Management System</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+}
+
+.navbar{
+background:#0d6efd;
+}
+
+.navbar-brand,
+.nav-link{
+color:white!important;
+font-weight:500;
+}
+
+.hero{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(135deg,#0d6efd,#4facfe);
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:700;
+}
+
+.hero p{
+font-size:20px;
+margin-top:20px;
+}
+
+.btn-custom{
+margin-top:25px;
+padding:12px 35px;
+font-size:18px;
+border-radius:30px;
+}
+
+.section-title{
+text-align:center;
+margin:60px 0 30px;
+font-weight:bold;
+}
+
+.card{
+border:none;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.icon{
+font-size:60px;
+}
+
+.dashboard{
+margin-top:60px;
+}
+
+.dashboard .card{
+text-align:center;
+padding:30px;
+}
+
+.upload-box{
+border:3px dashed #0d6efd;
+padding:40px;
+border-radius:15px;
+text-align:center;
+background:white;
+}
+
+table{
+background:white;
+}
+
+footer{
+margin-top:80px;
+background:#0d6efd;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+
+<a class="navbar-brand" href="#">SecureDocs</a>
+
+<!-- <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button> -->
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Login</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Register</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Secure Cloud Document Management System</h1>
+
+<p>
+Upload, Store and Access your documents securely using AWS Cloud.
+</p>
+
+<button class="btn btn-light btn-custom">
+Get Started
+</button>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<div class="container">
+
+<h2 class="section-title">Features</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<div class="icon">☁️</div>
+
+<h4>Cloud Storage</h4>
+
+<p>
+Store unlimited files securely on Amazon S3.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<div class="icon">🔒</div>
+
+<h4>Secure Access</h4>
+
+<p>
+Protected with Login Authentication and Encryption.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<div class="icon">📂</div>
+
+<h4>Easy Management</h4>
+
+<p>
+Upload, Download and Delete files anytime.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Dashboard -->
+
+<div class="container dashboard">
+
+<h2 class="section-title">Dashboard Preview</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card">
+
+<h3>25</h3>
+
+<p>Total Files</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card">
+
+<h3>1.8 GB</h3>
+
+<p>Storage Used</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card">
+
+<h3>15</h3>
+
+<p>Downloads</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card">
+
+<h3>100%</h3>
+
+<p>Secure</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Upload -->
+
+<div class="container mt-5">
+
+<h2 class="section-title">Upload Document</h2>
+
+<div class="upload-box">
+
+<h4>Drag & Drop Your File Here</h4>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" class="form-control">
+    <br>
+    <button class="btn btn-primary">Upload</button>
+</form>  
+<form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Upload File</button>
+</form> 
+<br>
+
+
+<br>
+
+<button class="btn btn-primary">
+Upload File
+</button>
+
+</div>
+
+</div>
+
+<!-- Documents -->
+
+<div class="container mt-5">
+
+<h2 class="section-title">My Documents</h2>
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-hover">
+
+<thead class="table-primary">
+
+<tr>
+
+<th>File Name</th>
+<th>Size</th>
+<th>Date</th>
+<th>Download</th>
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Resume.pdf</td>
+
+<td>1.2 MB</td>
+
+<td>13 Jul 2026</td>
+
+<td>
+
+<button class="btn btn-success btn-sm">
+Download
+</button>
+
+</td>
+
+<td>
+
+<button class="btn btn-danger btn-sm">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>ProjectReport.docx</td>
+
+<td>850 KB</td>
+
+<td>12 Jul 2026</td>
+
+<td>
+
+<button class="btn btn-success btn-sm">
+Download
+</button>
+
+</td>
+
+<td>
+
+<button class="btn btn-danger btn-sm">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+<h5>Secure Cloud Document Management System</h5>
+
+<p>
+Built with HTML5 • CSS3 • Bootstrap • JavaScript • Flask • Amazon S3 • MySQL
+</p>
+
+
+<p>Crafted with ❤️ by <strong>Kunal Solanki</strong></p>
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
