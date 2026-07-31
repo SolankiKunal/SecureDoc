@@ -239,9 +239,12 @@ This project is licensed under the MIT License.
 B.Tech – Computer Science & Engineering (Data Science)
 
 ABES Engineering College, Ghaziabad
+![Uploading Screenshot 2026-07-15 222626.png…]()
+
 
 ---
 
 ## ⭐ Support
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
+
