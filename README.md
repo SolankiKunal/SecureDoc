@@ -240,6 +240,19 @@ B.Tech – Computer Science & Engineering (Data Science)
 
 ABES Engineering College, Ghaziabad
 ![Uploading Screenshot 2026-07-15 222626.png…]()
+<img width="935" height="485" alt="Screenshot 2026-07-15 222640" src="https://github.com/user-attachments/assets/2919d7e7-a939-4d64-9634-de7033af16c4" />
+<img width="101" height="33" alt="Screenshot 2026-07-15 222648" src="https://github.com/user-attachments/assets/c46ee23c-ee8f-4089-8019-7d06a58852f8" />
+
+<img width="935" height="364" alt="Screenshot 2026-07-15 222659" src="https://github.com/user-attachments/assets/b5266585-706b-47ce-a6e3-653a5e5c2404" />
+<img width="428" height="80" alt="Screenshot 2026-07-15 222729" src="https://github.com/user-attachments/assets/efbad465-04bd-40b0-b194-f1d0d4e56cad" />
+<img width="428" height="80" alt="Screenshot 2026-07-15 222729" src="https://github.com/user-attachments/assets/c25d2c5b-a174-4fc2-8030-db97779e0829" />
+
+
+
+
+
+
+
 
 
 ---
